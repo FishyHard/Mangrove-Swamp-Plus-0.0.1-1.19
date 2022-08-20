@@ -17,7 +17,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, MangroveSwampPlus.MOD_ID);
 
     public static final RegistryObject<Item> KING_FROG_SPAWN_EGG = ITEMS.register("king_frog_spawn_egg",
-            () -> new ForgeSpawnEggItem(ModEntities.KING_FROG,0x948e8d, 0x3b3635,
+            () -> new ForgeSpawnEggItem(ModEntities.KING_FROG,0x0f62ba, 0xebb931,
                     new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static void register(IEventBus eventBus) {

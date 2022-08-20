@@ -24,7 +24,7 @@ public class KingFrogRenderer extends GeoEntityRenderer<KingFrog> {
     public RenderType getRenderType(KingFrog animatable, float partialTicks, PoseStack stack,
                                     MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn,
                                     ResourceLocation textureLocation) {
-        stack.scale(0.8F, 0.8F, 0.8F);
+        stack.scale(1.4F, 1.4F, 1.4F);
         return super.getRenderType(animatable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
     }
 }

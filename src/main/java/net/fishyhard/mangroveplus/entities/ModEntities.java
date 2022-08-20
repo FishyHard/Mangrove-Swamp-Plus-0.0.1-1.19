@@ -19,7 +19,7 @@ public class ModEntities {
     public static final RegistryObject<EntityType<KingFrog>> KING_FROG =
             ENTITIES.register("king_frog",
             () -> EntityType.Builder.<KingFrog>of(KingFrog::new, MobCategory.CREATURE)
-                    .sized(2F, 2F)
+                    .sized(1.8F, 2F)
                     .build(new ResourceLocation(MangroveSwampPlus.MOD_ID, "king_frog").toString()));
 
     public static void register(IEventBus eventBus) {
