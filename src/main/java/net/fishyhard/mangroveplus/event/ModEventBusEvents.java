@@ -2,6 +2,7 @@ package net.fishyhard.mangroveplus.event;
 
 import net.fishyhard.mangroveplus.MangroveSwampPlus;
 import net.fishyhard.mangroveplus.entities.ModEntities;
+import net.fishyhard.mangroveplus.entities.custom.Beaver;
 import net.fishyhard.mangroveplus.entities.custom.KingFrog;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,5 +13,6 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(ModEntities.KING_FROG.get(), KingFrog.setAttributes());
+        event.put(ModEntities.BEAVER.get(), Beaver.setAttributes());
     }
 }

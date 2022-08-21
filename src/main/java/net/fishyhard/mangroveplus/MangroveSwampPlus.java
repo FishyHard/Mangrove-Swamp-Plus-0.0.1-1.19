@@ -2,6 +2,7 @@ package net.fishyhard.mangroveplus;
 
 import com.mojang.logging.LogUtils;
 import net.fishyhard.mangroveplus.entities.ModEntities;
+import net.fishyhard.mangroveplus.entities.client.BeaverRenderer;
 import net.fishyhard.mangroveplus.entities.client.KingFrogRenderer;
 import net.fishyhard.mangroveplus.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -46,6 +47,7 @@ public class MangroveSwampPlus
     }
     private void clientSetup(final FMLCommonSetupEvent event) {
         EntityRenderers.register(ModEntities.KING_FROG.get(), KingFrogRenderer::new);
+        EntityRenderers.register(ModEntities.BEAVER.get(), BeaverRenderer::new);
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -54,6 +56,7 @@ public class MangroveSwampPlus
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.KING_FROG.get(), KingFrogRenderer::new);
+            EntityRenderers.register(ModEntities.BEAVER.get(), BeaverRenderer::new);
         }
     }
 }

@@ -1,6 +1,8 @@
 {
   "item.mangroveplus.king_frog_spawn_egg": "King Frog Spawn Egg",
+  "item.mangroveplus.beaver_spawn_egg": "Beaver Spawn Egg",
 
-  "entity.mangroveplus.king_frog": "King Frog"
+  "entity.mangroveplus.king_frog": "King Frog",
+  "entity.mangroveplus.beaver": "Beaver"
 
 }

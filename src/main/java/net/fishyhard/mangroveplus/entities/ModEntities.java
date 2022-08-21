@@ -1,6 +1,7 @@
 package net.fishyhard.mangroveplus.entities;
 
 import net.fishyhard.mangroveplus.MangroveSwampPlus;
+import net.fishyhard.mangroveplus.entities.custom.Beaver;
 import net.fishyhard.mangroveplus.entities.custom.KingFrog;
 import net.minecraft.ResourceLocationException;
 import net.minecraft.resources.ResourceLocation;
@@ -21,6 +22,12 @@ public class ModEntities {
             () -> EntityType.Builder.<KingFrog>of(KingFrog::new, MobCategory.CREATURE)
                     .sized(1.8F, 2F)
                     .build(new ResourceLocation(MangroveSwampPlus.MOD_ID, "king_frog").toString()));
+
+    public static final RegistryObject<EntityType<Beaver>> BEAVER =
+            ENTITIES.register("beaver",
+                    () -> EntityType.Builder.<Beaver>of(Beaver::new, MobCategory.CREATURE)
+                            .sized(0.6F, 0.4F)
+                            .build(new ResourceLocation(MangroveSwampPlus.MOD_ID, "beaver").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);
