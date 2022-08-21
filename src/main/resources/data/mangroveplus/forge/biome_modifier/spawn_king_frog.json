@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "minecraft:mangrove_swamp"
+  ],
+  "spawners": {
+    "type": "mangroveplus:king_frog",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}
