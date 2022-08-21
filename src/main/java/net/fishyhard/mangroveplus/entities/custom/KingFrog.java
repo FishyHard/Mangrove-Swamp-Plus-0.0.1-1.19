@@ -42,6 +42,7 @@ public class KingFrog extends Animal implements IAnimatable {
     }
 
     protected void registerGoals() {
+        this.goalSelector.addGoal(1, new FloatGoal(this));
         this.goalSelector.addGoal(0, new MeleeAttackGoal(this, 0.5D, true));
         this.goalSelector.addGoal(2, new MoveTowardsTargetGoal(this, 0.2D, 32.0F));
         this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, Player.class, 6.0F));
